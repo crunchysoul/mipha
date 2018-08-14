@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.19.0">
+    <title>API Reference – mipha v0.0.1</title>
+    <link rel="stylesheet" href="dist/app-4b38423804.css" />
+    <script src="dist/sidebar_items-e2a5db4e0c.js"></script>
+    
+  </head>
+  <body data-type="extras">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+<div class="main">
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Sidebar</span>
+</button>
+<button class="sidebar-button night-mode-toggle">
+  <span class="icon-theme" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Theme</span>
+</button>
+<section class="sidebar">
+
+  <a href="api-reference.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+mipha      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.0.1
+      </h2>
+    </div>
+  </a>
+
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
+  </form>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+<h1>
+  <small class="visible-xs">mipha v0.0.1</small>
+  API Reference
+</h1>
+
+  <section class="details-list">
+    <h2 id="modules" class="section-heading">
+  <a href="#modules" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Modules
+</h2>
+
+    <div class="summary">
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.html">Mipha</a>
+  </div>
+    <div class="summary-synopsis"><p>Mipha keeps the contexts that define your domain
+and business logic</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Accounts.html">Mipha.Accounts</a>
+  </div>
+    <div class="summary-synopsis"><p>The Accounts context</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Collections.html">Mipha.Collections</a>
+  </div>
+    <div class="summary-synopsis"><p>The Collections context</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Follows.html">Mipha.Follows</a>
+  </div>
+    <div class="summary-synopsis"><p>The Follows context</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Follows.Queries.html">Mipha.Follows.Queries</a>
+  </div>
+    <div class="summary-synopsis"><p>Query Follows Contetxt</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Markdown.html">Mipha.Markdown</a>
+  </div>
+    <div class="summary-synopsis"><p>Sanitize a string’s HTML, then render the string as markdown in the Mipha style</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Markdown.AutoLinker.html">Mipha.Markdown.AutoLinker</a>
+  </div>
+    <div class="summary-synopsis"><p>AutoLinker will run on a string and return the string with any naked links
+wrapped in an <code class="inline">a</code> tag with the link as both content and href</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Markdown.EmojiReplacer.html">Mipha.Markdown.EmojiReplacer</a>
+  </div>
+    <div class="summary-synopsis"><p>EmojiReplacer will run on a string and return the string with any emoji marks
+(i.e. :poop:) replaced with their emoji counterpart</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Markdown.MentionReplacer.html">Mipha.Markdown.MentionReplacer</a>
+  </div>
+    <div class="summary-synopsis"><p>Replacer</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Notifications.html">Mipha.Notifications</a>
+  </div>
+    <div class="summary-synopsis"><p>The Notifications context</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Notifications.Notification.NotificationAction.html">Mipha.Notifications.Notification.NotificationAction</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Regexp.html">Mipha.Regexp</a>
+  </div>
+    <div class="summary-synopsis"><p>Regex</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Replies.html">Mipha.Replies</a>
+  </div>
+    <div class="summary-synopsis"><p>The Replies context</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Repo.html">Mipha.Repo</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Stars.html">Mipha.Stars</a>
+  </div>
+    <div class="summary-synopsis"><p>The Stars context</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Topics.html">Mipha.Topics</a>
+  </div>
+    <div class="summary-synopsis"><p>The Topics context</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Topics.Topic.TopicType.html">Mipha.Topics.Topic.TopicType</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="Mipha.Utils.Store.html">Mipha.Utils.Store</a>
+  </div>
+    <div class="summary-synopsis"><p>文件储存</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.html">MiphaWeb</a>
+  </div>
+    <div class="summary-synopsis"><p>The entrypoint for defining your web interface, such
+as controllers, views, channels and so on</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.CompanyController.html">MiphaWeb.Admin.CompanyController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.CompanyView.html">MiphaWeb.Admin.CompanyView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.NodeController.html">MiphaWeb.Admin.NodeController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.NodeView.html">MiphaWeb.Admin.NodeView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.NotificationController.html">MiphaWeb.Admin.NotificationController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.NotificationView.html">MiphaWeb.Admin.NotificationView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.PageController.html">MiphaWeb.Admin.PageController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.PageView.html">MiphaWeb.Admin.PageView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.ReplyController.html">MiphaWeb.Admin.ReplyController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.ReplyView.html">MiphaWeb.Admin.ReplyView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.TeamController.html">MiphaWeb.Admin.TeamController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.TeamView.html">MiphaWeb.Admin.TeamView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.TopicController.html">MiphaWeb.Admin.TopicController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.TopicView.html">MiphaWeb.Admin.TopicView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.UserController.html">MiphaWeb.Admin.UserController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Admin.UserView.html">MiphaWeb.Admin.UserView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.AuthController.html">MiphaWeb.AuthController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.AuthView.html">MiphaWeb.AuthView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.CallbackController.html">MiphaWeb.CallbackController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.CompanyController.html">MiphaWeb.CompanyController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.CompanyView.html">MiphaWeb.CompanyView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Email.html">MiphaWeb.Email</a>
+  </div>
+    <div class="summary-synopsis"><p>发送邮件集。</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.EmailView.html">MiphaWeb.EmailView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Endpoint.html">MiphaWeb.Endpoint</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.ErrorHelpers.html">MiphaWeb.ErrorHelpers</a>
+  </div>
+    <div class="summary-synopsis"><p>Conveniences for translating and building error messages</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.ErrorView.html">MiphaWeb.ErrorView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Gettext.html">MiphaWeb.Gettext</a>
+  </div>
+    <div class="summary-synopsis"><p>A module providing Internationalization with a gettext-based API</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.LayoutView.html">MiphaWeb.LayoutView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.LocationController.html">MiphaWeb.LocationController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.LocationView.html">MiphaWeb.LocationView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.NotificationController.html">MiphaWeb.NotificationController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.NotificationView.html">MiphaWeb.NotificationView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.PageController.html">MiphaWeb.PageController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.PageView.html">MiphaWeb.PageView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Plug.Attack.html">MiphaWeb.Plug.Attack</a>
+  </div>
+    <div class="summary-synopsis"><p>安全应对，防灌水。</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Plug.CurrentUser.html">MiphaWeb.Plug.CurrentUser</a>
+  </div>
+    <div class="summary-synopsis"><p>A <a href="https://hexdocs.pm/plug/1.6.1/Plug.html"><code class="inline">Plug</code></a> to assign <code class="inline">:current_user</code> based on the session</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Plug.RequireUser.html">MiphaWeb.Plug.RequireUser</a>
+  </div>
+    <div class="summary-synopsis"><p>A <a href="https://hexdocs.pm/plug/1.6.1/Plug.html"><code class="inline">Plug</code></a> to redirect to <code class="inline">pages/index</code> if there is no current user</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.ReplyController.html">MiphaWeb.ReplyController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.ReplyView.html">MiphaWeb.ReplyView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Router.html">MiphaWeb.Router</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Router.Helpers.html">MiphaWeb.Router.Helpers</a>
+  </div>
+    <div class="summary-synopsis"><p>Module with named helpers generated from MiphaWeb.Router</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.SearchController.html">MiphaWeb.SearchController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.SearchView.html">MiphaWeb.SearchView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.Session.html">MiphaWeb.Session</a>
+  </div>
+    <div class="summary-synopsis"><p>Some helpers for session-related things</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.SessionController.html">MiphaWeb.SessionController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.SessionView.html">MiphaWeb.SessionView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.SettingController.html">MiphaWeb.SettingController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.SettingView.html">MiphaWeb.SettingView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.SharedView.html">MiphaWeb.SharedView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.TagHelpers.html">MiphaWeb.TagHelpers</a>
+  </div>
+    <div class="summary-synopsis"><p>View helpers for generating particular tags with some internal logic</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.TeamController.html">MiphaWeb.TeamController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.TeamView.html">MiphaWeb.TeamView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.TopicController.html">MiphaWeb.TopicController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.TopicView.html">MiphaWeb.TopicView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.UserController.html">MiphaWeb.UserController</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.UserSocket.html">MiphaWeb.UserSocket</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.UserView.html">MiphaWeb.UserView</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="MiphaWeb.ViewHelpers.html">MiphaWeb.ViewHelpers</a>
+  </div>
+    <div class="summary-synopsis"><p>View helpers for global funcs we find useful</p>
+</div>
+</div>
+    </div>
+  </section>
+
+
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.0),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-a0c90688fa.js"></script>
+  
+  </body>
+</html>
+

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.19.0">
+    <title>Mipha.Notifications – mipha v0.0.1</title>
+    <link rel="stylesheet" href="dist/app-4b38423804.css" />
+    <script src="dist/sidebar_items-e2a5db4e0c.js"></script>
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+    <div class="main">
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Sidebar</span>
+</button>
+<button class="sidebar-button night-mode-toggle">
+  <span class="icon-theme" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Theme</span>
+</button>
+<section class="sidebar">
+
+  <a href="api-reference.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+mipha      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.0.1
+      </h2>
+    </div>
+  </a>
+
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
+  </form>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">mipha v0.0.1</small>
+Mipha.Notifications              </h1>
+
+
+        <section id="moduledoc">
+<p>The Notifications context.</p>
+        </section>
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+  <div class="summary-types summary">
+    <h2>
+      <a href="#types">Types</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#t:notification_object/0">notification_object()</a>
+  </div>
+</div>
+  </div>
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#actor/1">actor(notification)</a>
+  </div>
+    <div class="summary-synopsis"><p>获取通知的发送者。</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_notification/1">change_notification(notification)</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking notification changes</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_user_notification/1">change_user_notification(user_notification)</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking user_notification changes</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#clean_notification/1">clean_notification(user)</a>
+  </div>
+    <div class="summary-synopsis"><p>清空通知</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_notification/1">create_notification(attrs \\ %{})</a>
+  </div>
+    <div class="summary-synopsis"><p>Creates a notification</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_user_notification/1">create_user_notification(attrs \\ %{})</a>
+  </div>
+    <div class="summary-synopsis"><p>Creates a user_notification</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_notification/1">delete_notification(notification)</a>
+  </div>
+    <div class="summary-synopsis"><p>Deletes a Notification</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_user_notification/1">delete_user_notification(user_notification)</a>
+  </div>
+    <div class="summary-synopsis"><p>Deletes a UserNotification</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_notification!/1">get_notification!(id)</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets a single notification</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user_notification!/1">get_user_notification!(id)</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets a single user_notification</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#insert_notification/1">insert_notification(attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>Inserts a notification</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_notifications/0">list_notifications()</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns the list of notifications</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_users_notifications/0">list_users_notifications()</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns the list of users_notifications</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#mark_read_notification/1">mark_read_notification(user)</a>
+  </div>
+    <div class="summary-synopsis"><p>标注所有未读信息为已读</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#object/1">object(notification)</a>
+  </div>
+    <div class="summary-synopsis"><p>获取通知对象 topic || reply || user</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#read_notification/1">read_notification(user_notification)</a>
+  </div>
+    <div class="summary-synopsis"><p>标记单个已读</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#unread_notification_count/1">unread_notification_count(user)</a>
+  </div>
+    <div class="summary-synopsis"><p>获取未读的 Notification 个数</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_notification/2">update_notification(notification, attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>Updates a notification</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_user_notification/2">update_user_notification(user_notification, attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>Updates a user_notification</p>
+</div>
+</div>
+  </div>
+          
+        </section>
+
+        <section id="types" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#types">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Types
+          </h1>
+          <div class="types-list">
+<div class="detail" id="t:notification_object/0">
+    <div class="detail-header">
+    <a href="#t:notification_object/0" class="detail-link" title="Link to this type">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this type</span>
+    </a>
+    <span class="signature">notification_object()</span>
+        
+      <div class="specs">
+          <pre>notification_object() ::
+  Mipha.Topics.Topic.t() | Mipha.Replies.Reply.t() | Mipha.Accounts.User.t()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+  </section>
+</div>
+          </div>
+        </section>
+
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+<div class="detail" id="actor/1">
+    <div class="detail-header">
+    <a href="#actor/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">actor(notification)</span>
+        
+      <div class="specs">
+          <pre>actor(Mipha.Notifications.Notification.t()) :: Mipha.Accounts.User.t() | nil</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>获取通知的发送者。</p>
+<h2 id="actor/1-examples" class="section-heading">
+  <a href="#actor/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">actor</span><span class="p" data-group-id="6073519372-1">(</span><span class="p" data-group-id="6073519372-2">%</span><span class="nc" data-group-id="6073519372-2">Notification</span><span class="p" data-group-id="6073519372-2">{</span><span class="p" data-group-id="6073519372-2">}</span><span class="p" data-group-id="6073519372-1">)</span><span class="w">
+</span><span class="p" data-group-id="6073519372-3">%</span><span class="nc" data-group-id="6073519372-3">User</span><span class="p" data-group-id="6073519372-3">{</span><span class="p" data-group-id="6073519372-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">actor</span><span class="p" data-group-id="6073519372-4">(</span><span class="p" data-group-id="6073519372-5">%</span><span class="nc" data-group-id="6073519372-5">Notification</span><span class="p" data-group-id="6073519372-5">{</span><span class="p" data-group-id="6073519372-5">}</span><span class="p" data-group-id="6073519372-4">)</span><span class="w">
+</span><span class="no">nil</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="change_notification/1">
+    <div class="detail-header">
+    <a href="#change_notification/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">change_notification(notification)</span>
+          </div>
+  <section class="docstring">
+<p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking notification changes.</p>
+<h2 id="change_notification/1-examples" class="section-heading">
+  <a href="#change_notification/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_notification</span><span class="p" data-group-id="5852418184-1">(</span><span class="n">notification</span><span class="p" data-group-id="5852418184-1">)</span><span class="w">
+</span><span class="p" data-group-id="5852418184-2">%</span><span class="nc" data-group-id="5852418184-2">Ecto.Changeset</span><span class="p" data-group-id="5852418184-2">{</span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5852418184-3">%</span><span class="nc" data-group-id="5852418184-3">Notification</span><span class="p" data-group-id="5852418184-3">{</span><span class="p" data-group-id="5852418184-3">}</span><span class="p" data-group-id="5852418184-2">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="change_user_notification/1">
+    <div class="detail-header">
+    <a href="#change_user_notification/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">change_user_notification(user_notification)</span>
+          </div>
+  <section class="docstring">
+<p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking user_notification changes.</p>
+<h2 id="change_user_notification/1-examples" class="section-heading">
+  <a href="#change_user_notification/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_user_notification</span><span class="p" data-group-id="2693020686-1">(</span><span class="n">user_notification</span><span class="p" data-group-id="2693020686-1">)</span><span class="w">
+</span><span class="p" data-group-id="2693020686-2">%</span><span class="nc" data-group-id="2693020686-2">Ecto.Changeset</span><span class="p" data-group-id="2693020686-2">{</span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="2693020686-3">%</span><span class="nc" data-group-id="2693020686-3">UserNotification</span><span class="p" data-group-id="2693020686-3">{</span><span class="p" data-group-id="2693020686-3">}</span><span class="p" data-group-id="2693020686-2">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="clean_notification/1">
+    <div class="detail-header">
+    <a href="#clean_notification/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">clean_notification(user)</span>
+        
+      <div class="specs">
+          <pre>clean_notification(Mipha.Accounts.User.t()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>清空通知</p>
+  </section>
+</div>
+<div class="detail" id="create_notification/1">
+  
+    <span id="create_notification/0"></span>
+  <div class="detail-header">
+    <a href="#create_notification/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_notification(attrs \\ %{})</span>
+          </div>
+  <section class="docstring">
+<p>Creates a notification.</p>
+<h2 id="create_notification/1-examples" class="section-heading">
+  <a href="#create_notification/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">create_notification</span><span class="p" data-group-id="2231379791-1">(</span><span class="p" data-group-id="2231379791-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">value</span><span class="p" data-group-id="2231379791-2">}</span><span class="p" data-group-id="2231379791-1">)</span><span class="w">
+</span><span class="p" data-group-id="2231379791-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2231379791-4">%</span><span class="nc" data-group-id="2231379791-4">Notification</span><span class="p" data-group-id="2231379791-4">{</span><span class="p" data-group-id="2231379791-4">}</span><span class="p" data-group-id="2231379791-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">create_notification</span><span class="p" data-group-id="2231379791-5">(</span><span class="p" data-group-id="2231379791-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="2231379791-6">}</span><span class="p" data-group-id="2231379791-5">)</span><span class="w">
+</span><span class="p" data-group-id="2231379791-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2231379791-8">%</span><span class="nc" data-group-id="2231379791-8">Ecto.Changeset</span><span class="p" data-group-id="2231379791-8">{</span><span class="p" data-group-id="2231379791-8">}</span><span class="p" data-group-id="2231379791-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="create_user_notification/1">
+  
+    <span id="create_user_notification/0"></span>
+  <div class="detail-header">
+    <a href="#create_user_notification/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_user_notification(attrs \\ %{})</span>
+          </div>
+  <section class="docstring">
+<p>Creates a user_notification.</p>
+<h2 id="create_user_notification/1-examples" class="section-heading">
+  <a href="#create_user_notification/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">create_user_notification</span><span class="p" data-group-id="3327933418-1">(</span><span class="p" data-group-id="3327933418-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">value</span><span class="p" data-group-id="3327933418-2">}</span><span class="p" data-group-id="3327933418-1">)</span><span class="w">
+</span><span class="p" data-group-id="3327933418-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3327933418-4">%</span><span class="nc" data-group-id="3327933418-4">UserNotification</span><span class="p" data-group-id="3327933418-4">{</span><span class="p" data-group-id="3327933418-4">}</span><span class="p" data-group-id="3327933418-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">create_user_notification</span><span class="p" data-group-id="3327933418-5">(</span><span class="p" data-group-id="3327933418-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="3327933418-6">}</span><span class="p" data-group-id="3327933418-5">)</span><span class="w">
+</span><span class="p" data-group-id="3327933418-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3327933418-8">%</span><span class="nc" data-group-id="3327933418-8">Ecto.Changeset</span><span class="p" data-group-id="3327933418-8">{</span><span class="p" data-group-id="3327933418-8">}</span><span class="p" data-group-id="3327933418-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="delete_notification/1">
+    <div class="detail-header">
+    <a href="#delete_notification/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_notification(notification)</span>
+          </div>
+  <section class="docstring">
+<p>Deletes a Notification.</p>
+<h2 id="delete_notification/1-examples" class="section-heading">
+  <a href="#delete_notification/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">delete_notification</span><span class="p" data-group-id="5561823818-1">(</span><span class="n">notification</span><span class="p" data-group-id="5561823818-1">)</span><span class="w">
+</span><span class="p" data-group-id="5561823818-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5561823818-3">%</span><span class="nc" data-group-id="5561823818-3">Notification</span><span class="p" data-group-id="5561823818-3">{</span><span class="p" data-group-id="5561823818-3">}</span><span class="p" data-group-id="5561823818-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">delete_notification</span><span class="p" data-group-id="5561823818-4">(</span><span class="n">notification</span><span class="p" data-group-id="5561823818-4">)</span><span class="w">
+</span><span class="p" data-group-id="5561823818-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5561823818-6">%</span><span class="nc" data-group-id="5561823818-6">Ecto.Changeset</span><span class="p" data-group-id="5561823818-6">{</span><span class="p" data-group-id="5561823818-6">}</span><span class="p" data-group-id="5561823818-5">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="delete_user_notification/1">
+    <div class="detail-header">
+    <a href="#delete_user_notification/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_user_notification(user_notification)</span>
+          </div>
+  <section class="docstring">
+<p>Deletes a UserNotification.</p>
+<h2 id="delete_user_notification/1-examples" class="section-heading">
+  <a href="#delete_user_notification/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">delete_user_notification</span><span class="p" data-group-id="7288949249-1">(</span><span class="n">user_notification</span><span class="p" data-group-id="7288949249-1">)</span><span class="w">
+</span><span class="p" data-group-id="7288949249-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7288949249-3">%</span><span class="nc" data-group-id="7288949249-3">UserNotification</span><span class="p" data-group-id="7288949249-3">{</span><span class="p" data-group-id="7288949249-3">}</span><span class="p" data-group-id="7288949249-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">delete_user_notification</span><span class="p" data-group-id="7288949249-4">(</span><span class="n">user_notification</span><span class="p" data-group-id="7288949249-4">)</span><span class="w">
+</span><span class="p" data-group-id="7288949249-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7288949249-6">%</span><span class="nc" data-group-id="7288949249-6">Ecto.Changeset</span><span class="p" data-group-id="7288949249-6">{</span><span class="p" data-group-id="7288949249-6">}</span><span class="p" data-group-id="7288949249-5">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="get_notification!/1">
+    <div class="detail-header">
+    <a href="#get_notification!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_notification!(id)</span>
+          </div>
+  <section class="docstring">
+<p>Gets a single notification.</p>
+<p>Raises <a href="https://hexdocs.pm/ecto/2.2.10/Ecto.NoResultsError.html"><code class="inline">Ecto.NoResultsError</code></a> if the Notification does not exist.</p>
+<h2 id="get_notification!/1-examples" class="section-heading">
+  <a href="#get_notification!/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_notification!</span><span class="p" data-group-id="3931262809-1">(</span><span class="mi">123</span><span class="p" data-group-id="3931262809-1">)</span><span class="w">
+</span><span class="p" data-group-id="3931262809-2">%</span><span class="nc" data-group-id="3931262809-2">Notification</span><span class="p" data-group-id="3931262809-2">{</span><span class="p" data-group-id="3931262809-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_notification!</span><span class="p" data-group-id="3931262809-3">(</span><span class="mi">456</span><span class="p" data-group-id="3931262809-3">)</span><span class="w">
+</span><span class="gt">** (Ecto.NoResultsError)</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="get_user_notification!/1">
+    <div class="detail-header">
+    <a href="#get_user_notification!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_user_notification!(id)</span>
+          </div>
+  <section class="docstring">
+<p>Gets a single user_notification.</p>
+<p>Raises <a href="https://hexdocs.pm/ecto/2.2.10/Ecto.NoResultsError.html"><code class="inline">Ecto.NoResultsError</code></a> if the User notification does not exist.</p>
+<h2 id="get_user_notification!/1-examples" class="section-heading">
+  <a href="#get_user_notification!/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_notification!</span><span class="p" data-group-id="2308841556-1">(</span><span class="mi">123</span><span class="p" data-group-id="2308841556-1">)</span><span class="w">
+</span><span class="p" data-group-id="2308841556-2">%</span><span class="nc" data-group-id="2308841556-2">UserNotification</span><span class="p" data-group-id="2308841556-2">{</span><span class="p" data-group-id="2308841556-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_notification!</span><span class="p" data-group-id="2308841556-3">(</span><span class="mi">456</span><span class="p" data-group-id="2308841556-3">)</span><span class="w">
+</span><span class="gt">** (Ecto.NoResultsError)</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="insert_notification/1">
+    <div class="detail-header">
+    <a href="#insert_notification/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">insert_notification(attrs)</span>
+        
+      <div class="specs">
+          <pre>insert_notification(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()) :: {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()}</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Inserts a notification.</p>
+  </section>
+</div>
+<div class="detail" id="list_notifications/0">
+    <div class="detail-header">
+    <a href="#list_notifications/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">list_notifications()</span>
+          </div>
+  <section class="docstring">
+<p>Returns the list of notifications.</p>
+<h2 id="list_notifications/0-examples" class="section-heading">
+  <a href="#list_notifications/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">list_notifications</span><span class="p" data-group-id="0469803436-1">(</span><span class="p" data-group-id="0469803436-1">)</span><span class="w">
+</span><span class="p" data-group-id="0469803436-2">[</span><span class="p" data-group-id="0469803436-3">%</span><span class="nc" data-group-id="0469803436-3">Notification</span><span class="p" data-group-id="0469803436-3">{</span><span class="p" data-group-id="0469803436-3">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="0469803436-2">]</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="list_users_notifications/0">
+    <div class="detail-header">
+    <a href="#list_users_notifications/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">list_users_notifications()</span>
+          </div>
+  <section class="docstring">
+<p>Returns the list of users_notifications.</p>
+<h2 id="list_users_notifications/0-examples" class="section-heading">
+  <a href="#list_users_notifications/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">list_users_notifications</span><span class="p" data-group-id="9667291096-1">(</span><span class="p" data-group-id="9667291096-1">)</span><span class="w">
+</span><span class="p" data-group-id="9667291096-2">[</span><span class="p" data-group-id="9667291096-3">%</span><span class="nc" data-group-id="9667291096-3">UserNotification</span><span class="p" data-group-id="9667291096-3">{</span><span class="p" data-group-id="9667291096-3">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="9667291096-2">]</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="mark_read_notification/1">
+    <div class="detail-header">
+    <a href="#mark_read_notification/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">mark_read_notification(user)</span>
+        
+      <div class="specs">
+          <pre>mark_read_notification(Mipha.Accounts.User.t()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>标注所有未读信息为已读</p>
+  </section>
+</div>
+<div class="detail" id="object/1">
+    <div class="detail-header">
+    <a href="#object/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">object(notification)</span>
+        
+      <div class="specs">
+          <pre>object(Mipha.Notifications.Notification.t()) :: <a href="#t:notification_object/0">notification_object</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>获取通知对象 topic || reply || user</p>
+<h2 id="object/1-examples" class="section-heading">
+  <a href="#object/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">object</span><span class="p" data-group-id="3196789388-1">(</span><span class="p" data-group-id="3196789388-2">%</span><span class="nc" data-group-id="3196789388-2">Notification</span><span class="p" data-group-id="3196789388-2">{</span><span class="p" data-group-id="3196789388-2">}</span><span class="p" data-group-id="3196789388-1">)</span><span class="w">
+</span><span class="p" data-group-id="3196789388-3">%</span><span class="nc" data-group-id="3196789388-3">Topic</span><span class="p" data-group-id="3196789388-3">{</span><span class="p" data-group-id="3196789388-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">object</span><span class="p" data-group-id="3196789388-4">(</span><span class="p" data-group-id="3196789388-5">%</span><span class="nc" data-group-id="3196789388-5">Notification</span><span class="p" data-group-id="3196789388-5">{</span><span class="p" data-group-id="3196789388-5">}</span><span class="p" data-group-id="3196789388-4">)</span><span class="w">
+</span><span class="p" data-group-id="3196789388-6">%</span><span class="nc" data-group-id="3196789388-6">Reply</span><span class="p" data-group-id="3196789388-6">{</span><span class="p" data-group-id="3196789388-6">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">object</span><span class="p" data-group-id="3196789388-7">(</span><span class="p" data-group-id="3196789388-8">%</span><span class="nc" data-group-id="3196789388-8">Notification</span><span class="p" data-group-id="3196789388-8">{</span><span class="p" data-group-id="3196789388-8">}</span><span class="p" data-group-id="3196789388-7">)</span><span class="w">
+</span><span class="p" data-group-id="3196789388-9">%</span><span class="nc" data-group-id="3196789388-9">User</span><span class="p" data-group-id="3196789388-9">{</span><span class="p" data-group-id="3196789388-9">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="read_notification/1">
+    <div class="detail-header">
+    <a href="#read_notification/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">read_notification(user_notification)</span>
+        
+      <div class="specs">
+          <pre>read_notification(Mipha.Notifications.UserNotification.t()) ::
+  {:ok, Mipha.Notifications.UserNotification.t()}
+  | {:error,
+     %Ecto.Changeset{
+       action: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       changes: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       constraints: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       data: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       empty_values: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       errors: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       filters: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       params: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       prepare: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       repo: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       repo_opts: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       required: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       types: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       valid?: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       validations: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()
+     }}</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>标记单个已读</p>
+  </section>
+</div>
+<div class="detail" id="unread_notification_count/1">
+    <div class="detail-header">
+    <a href="#unread_notification_count/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">unread_notification_count(user)</span>
+        
+      <div class="specs">
+          <pre>unread_notification_count(Mipha.Accounts.User.t()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>获取未读的 Notification 个数</p>
+  </section>
+</div>
+<div class="detail" id="update_notification/2">
+    <div class="detail-header">
+    <a href="#update_notification/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">update_notification(notification, attrs)</span>
+          </div>
+  <section class="docstring">
+<p>Updates a notification.</p>
+<h2 id="update_notification/2-examples" class="section-heading">
+  <a href="#update_notification/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_notification</span><span class="p" data-group-id="5448140089-1">(</span><span class="n">notification</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5448140089-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">new_value</span><span class="p" data-group-id="5448140089-2">}</span><span class="p" data-group-id="5448140089-1">)</span><span class="w">
+</span><span class="p" data-group-id="5448140089-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5448140089-4">%</span><span class="nc" data-group-id="5448140089-4">Notification</span><span class="p" data-group-id="5448140089-4">{</span><span class="p" data-group-id="5448140089-4">}</span><span class="p" data-group-id="5448140089-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">update_notification</span><span class="p" data-group-id="5448140089-5">(</span><span class="n">notification</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5448140089-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="5448140089-6">}</span><span class="p" data-group-id="5448140089-5">)</span><span class="w">
+</span><span class="p" data-group-id="5448140089-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5448140089-8">%</span><span class="nc" data-group-id="5448140089-8">Ecto.Changeset</span><span class="p" data-group-id="5448140089-8">{</span><span class="p" data-group-id="5448140089-8">}</span><span class="p" data-group-id="5448140089-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="update_user_notification/2">
+    <div class="detail-header">
+    <a href="#update_user_notification/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">update_user_notification(user_notification, attrs)</span>
+          </div>
+  <section class="docstring">
+<p>Updates a user_notification.</p>
+<h2 id="update_user_notification/2-examples" class="section-heading">
+  <a href="#update_user_notification/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_user_notification</span><span class="p" data-group-id="7310817380-1">(</span><span class="n">user_notification</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7310817380-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">new_value</span><span class="p" data-group-id="7310817380-2">}</span><span class="p" data-group-id="7310817380-1">)</span><span class="w">
+</span><span class="p" data-group-id="7310817380-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7310817380-4">%</span><span class="nc" data-group-id="7310817380-4">UserNotification</span><span class="p" data-group-id="7310817380-4">{</span><span class="p" data-group-id="7310817380-4">}</span><span class="p" data-group-id="7310817380-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">update_user_notification</span><span class="p" data-group-id="7310817380-5">(</span><span class="n">user_notification</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7310817380-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="7310817380-6">}</span><span class="p" data-group-id="7310817380-5">)</span><span class="w">
+</span><span class="p" data-group-id="7310817380-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7310817380-8">%</span><span class="nc" data-group-id="7310817380-8">Ecto.Changeset</span><span class="p" data-group-id="7310817380-8">{</span><span class="p" data-group-id="7310817380-8">}</span><span class="p" data-group-id="7310817380-7">}</span></code></pre>
+  </section>
+</div>
+        </section>
+
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.0),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-a0c90688fa.js"></script>
+  
+  </body>
+</html>
+

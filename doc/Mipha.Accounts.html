@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.19.0">
+    <title>Mipha.Accounts – mipha v0.0.1</title>
+    <link rel="stylesheet" href="dist/app-4b38423804.css" />
+    <script src="dist/sidebar_items-e2a5db4e0c.js"></script>
+    
+  </head>
+  <body data-type="modules">
+    <script>try { if(localStorage.getItem('night-mode')) document.body.className += ' night-mode'; } catch (e) { }</script>
+    <div class="main">
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Sidebar</span>
+</button>
+<button class="sidebar-button night-mode-toggle">
+  <span class="icon-theme" aria-hidden="true"></span>
+  <span class="sr-only">Toggle Theme</span>
+</button>
+<section class="sidebar">
+
+  <a href="api-reference.html" class="sidebar-projectLink">
+    <div class="sidebar-projectDetails">
+      <h1 class="sidebar-projectName">
+mipha      </h1>
+      <h2 class="sidebar-projectVersion">
+        v0.0.1
+      </h2>
+    </div>
+  </a>
+
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+    <input name="q" type="text" id="search-list" class="search-input" placeholder="Search" aria-label="Search" autocomplete="off" />
+  </form>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+
+      <h1>
+        <small class="visible-xs">mipha v0.0.1</small>
+Mipha.Accounts              </h1>
+
+
+        <section id="moduledoc">
+<p>The Accounts context.</p>
+        </section>
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+          
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#authenticate/1">authenticate(attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>Authenticate user login</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_company/1">change_company(company)</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking company changes</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_location/1">change_location(location)</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking location changes</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_team/1">change_team(team)</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking team changes</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_user/1">change_user(user)</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking user changes</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_user_reset_password/2">change_user_reset_password(user, attrs \\ %{})</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns the change user reset password</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#change_user_team/1">change_user_team(user_team)</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking user_team changes</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_company/1">create_company(attrs \\ %{})</a>
+  </div>
+    <div class="summary-synopsis"><p>Creates a company</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_location/1">create_location(attrs \\ %{})</a>
+  </div>
+    <div class="summary-synopsis"><p>Creates a location</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_team/1">create_team(attrs \\ %{})</a>
+  </div>
+    <div class="summary-synopsis"><p>Creates a team</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_user/1">create_user(attrs \\ %{})</a>
+  </div>
+    <div class="summary-synopsis"><p>Creates a user</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_user_team/1">create_user_team(attrs \\ %{})</a>
+  </div>
+    <div class="summary-synopsis"><p>Creates a user_team</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_company/1">delete_company(company)</a>
+  </div>
+    <div class="summary-synopsis"><p>Deletes a Company</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_location/1">delete_location(location)</a>
+  </div>
+    <div class="summary-synopsis"><p>Deletes a Location</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_team/1">delete_team(team)</a>
+  </div>
+    <div class="summary-synopsis"><p>Deletes a Team</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_user/1">delete_user(user)</a>
+  </div>
+    <div class="summary-synopsis"><p>Deletes a User</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_user_team/1">delete_user_team(user_team)</a>
+  </div>
+    <div class="summary-synopsis"><p>Deletes a UserTeam</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_company!/1">get_company!(id)</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets a single company</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_location!/1">get_location!(id)</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets a single location</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_team!/1">get_team!(id)</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets a single team</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_total_user_count/0">get_total_user_count()</a>
+  </div>
+    <div class="summary-synopsis"><p>获取全部 user 个数</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user!/1">get_user!(id)</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets a single user</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user/1">get_user(id)</a>
+  </div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user_by/2">get_user_by(clauses, opts \\ [])</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets a user by given clauses</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user_by_email/2">get_user_by_email(email, opts \\ [])</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets a user by its email</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user_by_username/2">get_user_by_username(username, opts \\ [])</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets a user by its username</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user_count/0">get_user_count()</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets the user count</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_user_team!/1">get_user_team!(id)</a>
+  </div>
+    <div class="summary-synopsis"><p>Gets a single user_team</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#github_handle/1">github_handle(user)</a>
+  </div>
+    <div class="summary-synopsis"><p>获取 user 或 team 的 github 账号。</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#github_repositories/1">github_repositories(user)</a>
+  </div>
+    <div class="summary-synopsis"><p>获取 用户或组织的 github repos，这里会借助缓存处理。</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_locations/0">list_locations()</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns the list of locations</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_teams/0">list_teams()</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns the list of teams</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#list_users_teams/0">list_users_teams()</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns the list of users_teams</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#login_or_register_from_github/1">login_or_register_from_github(user)</a>
+  </div>
+    <div class="summary-synopsis"><p>Github 登录应对。</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#mark_as_verified/1">mark_as_verified(user)</a>
+  </div>
+    <div class="summary-synopsis"><p>Mark the current user verified</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#register_user/1">register_user(attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>Register user</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#search_mention_user/2">search_mention_user(user, q)</a>
+  </div>
+    <div class="summary-synopsis"><p>添加 帖子与评论内容时，mention user</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_company/2">update_company(company, attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>Updates a company</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_location/2">update_location(location, attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>Updates a location</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_reset_password/2">update_reset_password(user, attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>找回密码-重置密码</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_team/2">update_team(team, attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>Updates a team</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_user/2">update_user(user, attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>Updates a user</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_user_password/2">update_user_password(user, attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>Updates user password</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#update_user_team/2">update_user_team(user_team, attrs)</a>
+  </div>
+    <div class="summary-synopsis"><p>Updates a user_team</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#user_login_changeset/1">user_login_changeset(attrs \\ %{})</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns the user login changeset</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#user_register_changeset/1">user_register_changeset(attrs \\ %{})</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns the user register changeset</p>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#user_update_password_changeset/1">user_update_password_changeset(attrs \\ %{})</a>
+  </div>
+    <div class="summary-synopsis"><p>Returns the user update_password changeset</p>
+</div>
+</div>
+  </div>
+          
+        </section>
+
+
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Functions
+          </h1>
+<div class="detail" id="authenticate/1">
+    <div class="detail-header">
+    <a href="#authenticate/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">authenticate(attrs)</span>
+        
+      <div class="specs">
+          <pre>authenticate(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: {:ok, Mipha.Accounts.User.t()} | {:error, <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()}</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Authenticate user login.</p>
+<h2 id="authenticate/1-examples" class="section-heading">
+  <a href="#authenticate/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">authenticate</span><span class="p" data-group-id="5134680759-1">(</span><span class="p" data-group-id="5134680759-2">%{</span><span class="ss">login</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;zven&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;123123123&quot;</span><span class="p" data-group-id="5134680759-2">}</span><span class="p" data-group-id="5134680759-1">)</span><span class="w">
+</span><span class="p" data-group-id="5134680759-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5134680759-4">%</span><span class="nc" data-group-id="5134680759-4">User</span><span class="p" data-group-id="5134680759-4">{</span><span class="p" data-group-id="5134680759-4">}</span><span class="p" data-group-id="5134680759-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">authenticate</span><span class="p" data-group-id="5134680759-5">(</span><span class="p" data-group-id="5134680759-6">%{</span><span class="ss">login</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;zven&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;123123123&quot;</span><span class="p" data-group-id="5134680759-6">}</span><span class="p" data-group-id="5134680759-5">)</span><span class="w">
+</span><span class="p" data-group-id="5134680759-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Incorrect login credentials&quot;</span><span class="p" data-group-id="5134680759-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="change_company/1">
+    <div class="detail-header">
+    <a href="#change_company/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">change_company(company)</span>
+          </div>
+  <section class="docstring">
+<p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking company changes.</p>
+<h2 id="change_company/1-examples" class="section-heading">
+  <a href="#change_company/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_company</span><span class="p" data-group-id="8240437507-1">(</span><span class="n">company</span><span class="p" data-group-id="8240437507-1">)</span><span class="w">
+</span><span class="p" data-group-id="8240437507-2">%</span><span class="nc" data-group-id="8240437507-2">Ecto.Changeset</span><span class="p" data-group-id="8240437507-2">{</span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8240437507-3">%</span><span class="nc" data-group-id="8240437507-3">Company</span><span class="p" data-group-id="8240437507-3">{</span><span class="p" data-group-id="8240437507-3">}</span><span class="p" data-group-id="8240437507-2">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="change_location/1">
+    <div class="detail-header">
+    <a href="#change_location/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">change_location(location)</span>
+          </div>
+  <section class="docstring">
+<p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking location changes.</p>
+<h2 id="change_location/1-examples" class="section-heading">
+  <a href="#change_location/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_location</span><span class="p" data-group-id="1544251779-1">(</span><span class="n">location</span><span class="p" data-group-id="1544251779-1">)</span><span class="w">
+</span><span class="p" data-group-id="1544251779-2">%</span><span class="nc" data-group-id="1544251779-2">Ecto.Changeset</span><span class="p" data-group-id="1544251779-2">{</span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1544251779-3">%</span><span class="nc" data-group-id="1544251779-3">Location</span><span class="p" data-group-id="1544251779-3">{</span><span class="p" data-group-id="1544251779-3">}</span><span class="p" data-group-id="1544251779-2">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="change_team/1">
+    <div class="detail-header">
+    <a href="#change_team/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">change_team(team)</span>
+          </div>
+  <section class="docstring">
+<p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking team changes.</p>
+<h2 id="change_team/1-examples" class="section-heading">
+  <a href="#change_team/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_team</span><span class="p" data-group-id="8230574714-1">(</span><span class="n">team</span><span class="p" data-group-id="8230574714-1">)</span><span class="w">
+</span><span class="p" data-group-id="8230574714-2">%</span><span class="nc" data-group-id="8230574714-2">Ecto.Changeset</span><span class="p" data-group-id="8230574714-2">{</span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8230574714-3">%</span><span class="nc" data-group-id="8230574714-3">Team</span><span class="p" data-group-id="8230574714-3">{</span><span class="p" data-group-id="8230574714-3">}</span><span class="p" data-group-id="8230574714-2">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="change_user/1">
+    <div class="detail-header">
+    <a href="#change_user/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">change_user(user)</span>
+          </div>
+  <section class="docstring">
+<p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking user changes.</p>
+<h2 id="change_user/1-examples" class="section-heading">
+  <a href="#change_user/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_user</span><span class="p" data-group-id="7450039839-1">(</span><span class="n">user</span><span class="p" data-group-id="7450039839-1">)</span><span class="w">
+</span><span class="p" data-group-id="7450039839-2">%</span><span class="nc" data-group-id="7450039839-2">Ecto.Changeset</span><span class="p" data-group-id="7450039839-2">{</span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7450039839-3">%</span><span class="nc" data-group-id="7450039839-3">User</span><span class="p" data-group-id="7450039839-3">{</span><span class="p" data-group-id="7450039839-3">}</span><span class="p" data-group-id="7450039839-2">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="change_user_reset_password/2">
+  
+    <span id="change_user_reset_password/1"></span>
+  <div class="detail-header">
+    <a href="#change_user_reset_password/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">change_user_reset_password(user, attrs \\ %{})</span>
+        
+      <div class="specs">
+          <pre>change_user_reset_password(Mipha.Accounts.User.t(), <a href="https://hexdocs.pm/elixir/Map.html#t:t/0">Map.t</a>()) ::
+  <a href="https://hexdocs.pm/ecto/2.2.10/Ecto.Changeset.html#t:t/0">Ecto.Changeset.t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Returns the change user reset password.</p>
+  </section>
+</div>
+<div class="detail" id="change_user_team/1">
+    <div class="detail-header">
+    <a href="#change_user_team/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">change_user_team(user_team)</span>
+          </div>
+  <section class="docstring">
+<p>Returns an <code class="inline">%Ecto.Changeset{}</code> for tracking user_team changes.</p>
+<h2 id="change_user_team/1-examples" class="section-heading">
+  <a href="#change_user_team/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">change_user_team</span><span class="p" data-group-id="9412303324-1">(</span><span class="n">user_team</span><span class="p" data-group-id="9412303324-1">)</span><span class="w">
+</span><span class="p" data-group-id="9412303324-2">%</span><span class="nc" data-group-id="9412303324-2">Ecto.Changeset</span><span class="p" data-group-id="9412303324-2">{</span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9412303324-3">%</span><span class="nc" data-group-id="9412303324-3">UserTeam</span><span class="p" data-group-id="9412303324-3">{</span><span class="p" data-group-id="9412303324-3">}</span><span class="p" data-group-id="9412303324-2">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="create_company/1">
+  
+    <span id="create_company/0"></span>
+  <div class="detail-header">
+    <a href="#create_company/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_company(attrs \\ %{})</span>
+          </div>
+  <section class="docstring">
+<p>Creates a company.</p>
+<h2 id="create_company/1-examples" class="section-heading">
+  <a href="#create_company/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">create_company</span><span class="p" data-group-id="1306321685-1">(</span><span class="p" data-group-id="1306321685-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">value</span><span class="p" data-group-id="1306321685-2">}</span><span class="p" data-group-id="1306321685-1">)</span><span class="w">
+</span><span class="p" data-group-id="1306321685-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1306321685-4">%</span><span class="nc" data-group-id="1306321685-4">Company</span><span class="p" data-group-id="1306321685-4">{</span><span class="p" data-group-id="1306321685-4">}</span><span class="p" data-group-id="1306321685-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">create_company</span><span class="p" data-group-id="1306321685-5">(</span><span class="p" data-group-id="1306321685-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="1306321685-6">}</span><span class="p" data-group-id="1306321685-5">)</span><span class="w">
+</span><span class="p" data-group-id="1306321685-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1306321685-8">%</span><span class="nc" data-group-id="1306321685-8">Ecto.Changeset</span><span class="p" data-group-id="1306321685-8">{</span><span class="p" data-group-id="1306321685-8">}</span><span class="p" data-group-id="1306321685-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="create_location/1">
+  
+    <span id="create_location/0"></span>
+  <div class="detail-header">
+    <a href="#create_location/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_location(attrs \\ %{})</span>
+          </div>
+  <section class="docstring">
+<p>Creates a location.</p>
+<h2 id="create_location/1-examples" class="section-heading">
+  <a href="#create_location/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">create_location</span><span class="p" data-group-id="4889841849-1">(</span><span class="p" data-group-id="4889841849-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">value</span><span class="p" data-group-id="4889841849-2">}</span><span class="p" data-group-id="4889841849-1">)</span><span class="w">
+</span><span class="p" data-group-id="4889841849-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4889841849-4">%</span><span class="nc" data-group-id="4889841849-4">Location</span><span class="p" data-group-id="4889841849-4">{</span><span class="p" data-group-id="4889841849-4">}</span><span class="p" data-group-id="4889841849-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">create_location</span><span class="p" data-group-id="4889841849-5">(</span><span class="p" data-group-id="4889841849-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="4889841849-6">}</span><span class="p" data-group-id="4889841849-5">)</span><span class="w">
+</span><span class="p" data-group-id="4889841849-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4889841849-8">%</span><span class="nc" data-group-id="4889841849-8">Ecto.Changeset</span><span class="p" data-group-id="4889841849-8">{</span><span class="p" data-group-id="4889841849-8">}</span><span class="p" data-group-id="4889841849-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="create_team/1">
+  
+    <span id="create_team/0"></span>
+  <div class="detail-header">
+    <a href="#create_team/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_team(attrs \\ %{})</span>
+          </div>
+  <section class="docstring">
+<p>Creates a team.</p>
+<h2 id="create_team/1-examples" class="section-heading">
+  <a href="#create_team/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">create_team</span><span class="p" data-group-id="3344442787-1">(</span><span class="p" data-group-id="3344442787-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">value</span><span class="p" data-group-id="3344442787-2">}</span><span class="p" data-group-id="3344442787-1">)</span><span class="w">
+</span><span class="p" data-group-id="3344442787-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3344442787-4">%</span><span class="nc" data-group-id="3344442787-4">Team</span><span class="p" data-group-id="3344442787-4">{</span><span class="p" data-group-id="3344442787-4">}</span><span class="p" data-group-id="3344442787-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">create_team</span><span class="p" data-group-id="3344442787-5">(</span><span class="p" data-group-id="3344442787-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="3344442787-6">}</span><span class="p" data-group-id="3344442787-5">)</span><span class="w">
+</span><span class="p" data-group-id="3344442787-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3344442787-8">%</span><span class="nc" data-group-id="3344442787-8">Ecto.Changeset</span><span class="p" data-group-id="3344442787-8">{</span><span class="p" data-group-id="3344442787-8">}</span><span class="p" data-group-id="3344442787-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="create_user/1">
+  
+    <span id="create_user/0"></span>
+  <div class="detail-header">
+    <a href="#create_user/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_user(attrs \\ %{})</span>
+          </div>
+  <section class="docstring">
+<p>Creates a user.</p>
+<h2 id="create_user/1-examples" class="section-heading">
+  <a href="#create_user/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">create_user</span><span class="p" data-group-id="9540371820-1">(</span><span class="p" data-group-id="9540371820-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">value</span><span class="p" data-group-id="9540371820-2">}</span><span class="p" data-group-id="9540371820-1">)</span><span class="w">
+</span><span class="p" data-group-id="9540371820-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9540371820-4">%</span><span class="nc" data-group-id="9540371820-4">User</span><span class="p" data-group-id="9540371820-4">{</span><span class="p" data-group-id="9540371820-4">}</span><span class="p" data-group-id="9540371820-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">create_user</span><span class="p" data-group-id="9540371820-5">(</span><span class="p" data-group-id="9540371820-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="9540371820-6">}</span><span class="p" data-group-id="9540371820-5">)</span><span class="w">
+</span><span class="p" data-group-id="9540371820-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9540371820-8">%</span><span class="nc" data-group-id="9540371820-8">Ecto.Changeset</span><span class="p" data-group-id="9540371820-8">{</span><span class="p" data-group-id="9540371820-8">}</span><span class="p" data-group-id="9540371820-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="create_user_team/1">
+  
+    <span id="create_user_team/0"></span>
+  <div class="detail-header">
+    <a href="#create_user_team/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">create_user_team(attrs \\ %{})</span>
+          </div>
+  <section class="docstring">
+<p>Creates a user_team.</p>
+<h2 id="create_user_team/1-examples" class="section-heading">
+  <a href="#create_user_team/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">create_user_team</span><span class="p" data-group-id="7218341050-1">(</span><span class="p" data-group-id="7218341050-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">value</span><span class="p" data-group-id="7218341050-2">}</span><span class="p" data-group-id="7218341050-1">)</span><span class="w">
+</span><span class="p" data-group-id="7218341050-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7218341050-4">%</span><span class="nc" data-group-id="7218341050-4">UserTeam</span><span class="p" data-group-id="7218341050-4">{</span><span class="p" data-group-id="7218341050-4">}</span><span class="p" data-group-id="7218341050-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">create_user_team</span><span class="p" data-group-id="7218341050-5">(</span><span class="p" data-group-id="7218341050-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="7218341050-6">}</span><span class="p" data-group-id="7218341050-5">)</span><span class="w">
+</span><span class="p" data-group-id="7218341050-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7218341050-8">%</span><span class="nc" data-group-id="7218341050-8">Ecto.Changeset</span><span class="p" data-group-id="7218341050-8">{</span><span class="p" data-group-id="7218341050-8">}</span><span class="p" data-group-id="7218341050-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="delete_company/1">
+    <div class="detail-header">
+    <a href="#delete_company/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_company(company)</span>
+          </div>
+  <section class="docstring">
+<p>Deletes a Company.</p>
+<h2 id="delete_company/1-examples" class="section-heading">
+  <a href="#delete_company/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">delete_company</span><span class="p" data-group-id="4656382238-1">(</span><span class="n">company</span><span class="p" data-group-id="4656382238-1">)</span><span class="w">
+</span><span class="p" data-group-id="4656382238-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4656382238-3">%</span><span class="nc" data-group-id="4656382238-3">Company</span><span class="p" data-group-id="4656382238-3">{</span><span class="p" data-group-id="4656382238-3">}</span><span class="p" data-group-id="4656382238-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">delete_company</span><span class="p" data-group-id="4656382238-4">(</span><span class="n">company</span><span class="p" data-group-id="4656382238-4">)</span><span class="w">
+</span><span class="p" data-group-id="4656382238-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4656382238-6">%</span><span class="nc" data-group-id="4656382238-6">Ecto.Changeset</span><span class="p" data-group-id="4656382238-6">{</span><span class="p" data-group-id="4656382238-6">}</span><span class="p" data-group-id="4656382238-5">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="delete_location/1">
+    <div class="detail-header">
+    <a href="#delete_location/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_location(location)</span>
+          </div>
+  <section class="docstring">
+<p>Deletes a Location.</p>
+<h2 id="delete_location/1-examples" class="section-heading">
+  <a href="#delete_location/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">delete_location</span><span class="p" data-group-id="5206049329-1">(</span><span class="n">location</span><span class="p" data-group-id="5206049329-1">)</span><span class="w">
+</span><span class="p" data-group-id="5206049329-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5206049329-3">%</span><span class="nc" data-group-id="5206049329-3">Location</span><span class="p" data-group-id="5206049329-3">{</span><span class="p" data-group-id="5206049329-3">}</span><span class="p" data-group-id="5206049329-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">delete_location</span><span class="p" data-group-id="5206049329-4">(</span><span class="n">location</span><span class="p" data-group-id="5206049329-4">)</span><span class="w">
+</span><span class="p" data-group-id="5206049329-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5206049329-6">%</span><span class="nc" data-group-id="5206049329-6">Ecto.Changeset</span><span class="p" data-group-id="5206049329-6">{</span><span class="p" data-group-id="5206049329-6">}</span><span class="p" data-group-id="5206049329-5">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="delete_team/1">
+    <div class="detail-header">
+    <a href="#delete_team/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_team(team)</span>
+          </div>
+  <section class="docstring">
+<p>Deletes a Team.</p>
+<h2 id="delete_team/1-examples" class="section-heading">
+  <a href="#delete_team/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">delete_team</span><span class="p" data-group-id="0434111531-1">(</span><span class="n">team</span><span class="p" data-group-id="0434111531-1">)</span><span class="w">
+</span><span class="p" data-group-id="0434111531-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0434111531-3">%</span><span class="nc" data-group-id="0434111531-3">Team</span><span class="p" data-group-id="0434111531-3">{</span><span class="p" data-group-id="0434111531-3">}</span><span class="p" data-group-id="0434111531-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">delete_team</span><span class="p" data-group-id="0434111531-4">(</span><span class="n">team</span><span class="p" data-group-id="0434111531-4">)</span><span class="w">
+</span><span class="p" data-group-id="0434111531-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0434111531-6">%</span><span class="nc" data-group-id="0434111531-6">Ecto.Changeset</span><span class="p" data-group-id="0434111531-6">{</span><span class="p" data-group-id="0434111531-6">}</span><span class="p" data-group-id="0434111531-5">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="delete_user/1">
+    <div class="detail-header">
+    <a href="#delete_user/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_user(user)</span>
+          </div>
+  <section class="docstring">
+<p>Deletes a User.</p>
+<h2 id="delete_user/1-examples" class="section-heading">
+  <a href="#delete_user/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">delete_user</span><span class="p" data-group-id="1462560725-1">(</span><span class="n">user</span><span class="p" data-group-id="1462560725-1">)</span><span class="w">
+</span><span class="p" data-group-id="1462560725-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1462560725-3">%</span><span class="nc" data-group-id="1462560725-3">User</span><span class="p" data-group-id="1462560725-3">{</span><span class="p" data-group-id="1462560725-3">}</span><span class="p" data-group-id="1462560725-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">delete_user</span><span class="p" data-group-id="1462560725-4">(</span><span class="n">user</span><span class="p" data-group-id="1462560725-4">)</span><span class="w">
+</span><span class="p" data-group-id="1462560725-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1462560725-6">%</span><span class="nc" data-group-id="1462560725-6">Ecto.Changeset</span><span class="p" data-group-id="1462560725-6">{</span><span class="p" data-group-id="1462560725-6">}</span><span class="p" data-group-id="1462560725-5">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="delete_user_team/1">
+    <div class="detail-header">
+    <a href="#delete_user_team/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">delete_user_team(user_team)</span>
+          </div>
+  <section class="docstring">
+<p>Deletes a UserTeam.</p>
+<h2 id="delete_user_team/1-examples" class="section-heading">
+  <a href="#delete_user_team/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">delete_user_team</span><span class="p" data-group-id="8632644590-1">(</span><span class="n">user_team</span><span class="p" data-group-id="8632644590-1">)</span><span class="w">
+</span><span class="p" data-group-id="8632644590-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8632644590-3">%</span><span class="nc" data-group-id="8632644590-3">UserTeam</span><span class="p" data-group-id="8632644590-3">{</span><span class="p" data-group-id="8632644590-3">}</span><span class="p" data-group-id="8632644590-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">delete_user_team</span><span class="p" data-group-id="8632644590-4">(</span><span class="n">user_team</span><span class="p" data-group-id="8632644590-4">)</span><span class="w">
+</span><span class="p" data-group-id="8632644590-5">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8632644590-6">%</span><span class="nc" data-group-id="8632644590-6">Ecto.Changeset</span><span class="p" data-group-id="8632644590-6">{</span><span class="p" data-group-id="8632644590-6">}</span><span class="p" data-group-id="8632644590-5">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="get_company!/1">
+    <div class="detail-header">
+    <a href="#get_company!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_company!(id)</span>
+          </div>
+  <section class="docstring">
+<p>Gets a single company.</p>
+<p>Raises <a href="https://hexdocs.pm/ecto/2.2.10/Ecto.NoResultsError.html"><code class="inline">Ecto.NoResultsError</code></a> if the Company does not exist.</p>
+<h2 id="get_company!/1-examples" class="section-heading">
+  <a href="#get_company!/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_company!</span><span class="p" data-group-id="6462699962-1">(</span><span class="mi">123</span><span class="p" data-group-id="6462699962-1">)</span><span class="w">
+</span><span class="p" data-group-id="6462699962-2">%</span><span class="nc" data-group-id="6462699962-2">Company</span><span class="p" data-group-id="6462699962-2">{</span><span class="p" data-group-id="6462699962-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_company!</span><span class="p" data-group-id="6462699962-3">(</span><span class="mi">456</span><span class="p" data-group-id="6462699962-3">)</span><span class="w">
+</span><span class="gt">** (Ecto.NoResultsError)</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="get_location!/1">
+    <div class="detail-header">
+    <a href="#get_location!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_location!(id)</span>
+          </div>
+  <section class="docstring">
+<p>Gets a single location.</p>
+<p>Raises <a href="https://hexdocs.pm/ecto/2.2.10/Ecto.NoResultsError.html"><code class="inline">Ecto.NoResultsError</code></a> if the Location does not exist.</p>
+<h2 id="get_location!/1-examples" class="section-heading">
+  <a href="#get_location!/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_location!</span><span class="p" data-group-id="4683646903-1">(</span><span class="mi">123</span><span class="p" data-group-id="4683646903-1">)</span><span class="w">
+</span><span class="p" data-group-id="4683646903-2">%</span><span class="nc" data-group-id="4683646903-2">Location</span><span class="p" data-group-id="4683646903-2">{</span><span class="p" data-group-id="4683646903-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_location!</span><span class="p" data-group-id="4683646903-3">(</span><span class="mi">456</span><span class="p" data-group-id="4683646903-3">)</span><span class="w">
+</span><span class="gt">** (Ecto.NoResultsError)</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="get_team!/1">
+    <div class="detail-header">
+    <a href="#get_team!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_team!(id)</span>
+          </div>
+  <section class="docstring">
+<p>Gets a single team.</p>
+<p>Raises <a href="https://hexdocs.pm/ecto/2.2.10/Ecto.NoResultsError.html"><code class="inline">Ecto.NoResultsError</code></a> if the Team does not exist.</p>
+<h2 id="get_team!/1-examples" class="section-heading">
+  <a href="#get_team!/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_team!</span><span class="p" data-group-id="1532402188-1">(</span><span class="mi">123</span><span class="p" data-group-id="1532402188-1">)</span><span class="w">
+</span><span class="p" data-group-id="1532402188-2">%</span><span class="nc" data-group-id="1532402188-2">Team</span><span class="p" data-group-id="1532402188-2">{</span><span class="p" data-group-id="1532402188-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_team!</span><span class="p" data-group-id="1532402188-3">(</span><span class="mi">456</span><span class="p" data-group-id="1532402188-3">)</span><span class="w">
+</span><span class="gt">** (Ecto.NoResultsError)</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="get_total_user_count/0">
+    <div class="detail-header">
+    <a href="#get_total_user_count/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_total_user_count()</span>
+        
+      <div class="specs">
+          <pre>get_total_user_count() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>获取全部 user 个数</p>
+  </section>
+</div>
+<div class="detail" id="get_user!/1">
+    <div class="detail-header">
+    <a href="#get_user!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_user!(id)</span>
+          </div>
+  <section class="docstring">
+<p>Gets a single user.</p>
+<p>Raises <a href="https://hexdocs.pm/ecto/2.2.10/Ecto.NoResultsError.html"><code class="inline">Ecto.NoResultsError</code></a> if the User does not exist.</p>
+<h2 id="get_user!/1-examples" class="section-heading">
+  <a href="#get_user!/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user!</span><span class="p" data-group-id="6996810651-1">(</span><span class="mi">123</span><span class="p" data-group-id="6996810651-1">)</span><span class="w">
+</span><span class="p" data-group-id="6996810651-2">%</span><span class="nc" data-group-id="6996810651-2">User</span><span class="p" data-group-id="6996810651-2">{</span><span class="p" data-group-id="6996810651-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user!</span><span class="p" data-group-id="6996810651-3">(</span><span class="mi">456</span><span class="p" data-group-id="6996810651-3">)</span><span class="w">
+</span><span class="gt">** (Ecto.NoResultsError)</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="get_user/1">
+    <div class="detail-header">
+    <a href="#get_user/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_user(id)</span>
+          </div>
+  <section class="docstring">
+  </section>
+</div>
+<div class="detail" id="get_user_by/2">
+  
+    <span id="get_user_by/1"></span>
+  <div class="detail-header">
+    <a href="#get_user_by/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_user_by(clauses, opts \\ [])</span>
+        
+      <div class="specs">
+          <pre>get_user_by(<a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>(), <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) :: Mipha.Accounts.User.t() | nil</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Gets a user by given clauses.</p>
+  </section>
+</div>
+<div class="detail" id="get_user_by_email/2">
+  
+    <span id="get_user_by_email/1"></span>
+  <div class="detail-header">
+    <a href="#get_user_by_email/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_user_by_email(email, opts \\ [])</span>
+        
+      <div class="specs">
+          <pre>get_user_by_email(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) :: Mipha.Accounts.User.t() | nil</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Gets a user by its email.</p>
+<h2 id="get_user_by_email/2-examples" class="section-heading">
+  <a href="#get_user_by_email/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email</span><span class="p" data-group-id="5875946329-1">(</span><span class="s">&quot;user123@mipha.com&quot;</span><span class="p" data-group-id="5875946329-1">)</span><span class="w">
+</span><span class="p" data-group-id="5875946329-2">%</span><span class="nc" data-group-id="5875946329-2">User</span><span class="p" data-group-id="5875946329-2">{</span><span class="p" data-group-id="5875946329-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_email</span><span class="p" data-group-id="5875946329-3">(</span><span class="s">&quot;user456@mipha.com&quot;</span><span class="p" data-group-id="5875946329-3">)</span><span class="w">
+</span><span class="no">nil</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="get_user_by_username/2">
+  
+    <span id="get_user_by_username/1"></span>
+  <div class="detail-header">
+    <a href="#get_user_by_username/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_user_by_username(username, opts \\ [])</span>
+        
+      <div class="specs">
+          <pre>get_user_by_username(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) :: Mipha.Accounts.User.t() | nil</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Gets a user by its username.</p>
+<h2 id="get_user_by_username/2-examples" class="section-heading">
+  <a href="#get_user_by_username/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_username</span><span class="p" data-group-id="2839293468-1">(</span><span class="s">&quot;user123&quot;</span><span class="p" data-group-id="2839293468-1">)</span><span class="w">
+</span><span class="p" data-group-id="2839293468-2">%</span><span class="nc" data-group-id="2839293468-2">User</span><span class="p" data-group-id="2839293468-2">{</span><span class="p" data-group-id="2839293468-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_by_username</span><span class="p" data-group-id="2839293468-3">(</span><span class="s">&quot;user456&quot;</span><span class="p" data-group-id="2839293468-3">)</span><span class="w">
+</span><span class="no">nil</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="get_user_count/0">
+    <div class="detail-header">
+    <a href="#get_user_count/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_user_count()</span>
+        
+      <div class="specs">
+          <pre>get_user_count() :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">non_neg_integer</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Gets the user count.</p>
+<h2 id="get_user_count/0-examples" class="section-heading">
+  <a href="#get_user_count/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_count</span><span class="w">
+</span><span class="mi">40</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="get_user_team!/1">
+    <div class="detail-header">
+    <a href="#get_user_team!/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">get_user_team!(id)</span>
+          </div>
+  <section class="docstring">
+<p>Gets a single user_team.</p>
+<p>Raises <a href="https://hexdocs.pm/ecto/2.2.10/Ecto.NoResultsError.html"><code class="inline">Ecto.NoResultsError</code></a> if the User team does not exist.</p>
+<h2 id="get_user_team!/1-examples" class="section-heading">
+  <a href="#get_user_team!/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">get_user_team!</span><span class="p" data-group-id="4328011538-1">(</span><span class="mi">123</span><span class="p" data-group-id="4328011538-1">)</span><span class="w">
+</span><span class="p" data-group-id="4328011538-2">%</span><span class="nc" data-group-id="4328011538-2">UserTeam</span><span class="p" data-group-id="4328011538-2">{</span><span class="p" data-group-id="4328011538-2">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">get_user_team!</span><span class="p" data-group-id="4328011538-3">(</span><span class="mi">456</span><span class="p" data-group-id="4328011538-3">)</span><span class="w">
+</span><span class="gt">** (Ecto.NoResultsError)</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="github_handle/1">
+    <div class="detail-header">
+    <a href="#github_handle/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">github_handle(user)</span>
+          </div>
+  <section class="docstring">
+<p>获取 user 或 team 的 github 账号。</p>
+  </section>
+</div>
+<div class="detail" id="github_repositories/1">
+    <div class="detail-header">
+    <a href="#github_repositories/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">github_repositories(user)</span>
+          </div>
+  <section class="docstring">
+<p>获取 用户或组织的 github repos，这里会借助缓存处理。</p>
+<h2 id="github_repositories/1-todo" class="section-heading">
+  <a href="#github_repositories/1-todo" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  TODO
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="err">需</span><span class="err">要</span><span class="err">队</span><span class="err">列</span><span class="err">处</span><span class="err">理</span></code></pre>
+<h2 id="github_repositories/1-example" class="section-heading">
+  <a href="#github_repositories/1-example" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Example
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">github_repositories</span><span class="p" data-group-id="1353464807-1">(</span><span class="n">user</span><span class="p" data-group-id="1353464807-1">)</span><span class="w">
+</span><span class="p" data-group-id="1353464807-2">[</span><span class="p" data-group-id="1353464807-3">%{</span><span class="p" data-group-id="1353464807-3">}</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1353464807-4">%{</span><span class="p" data-group-id="1353464807-4">}</span><span class="p" data-group-id="1353464807-2">]</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">github_repositories</span><span class="p" data-group-id="1353464807-5">(</span><span class="n">user</span><span class="p" data-group-id="1353464807-5">)</span><span class="w">
+</span><span class="p" data-group-id="1353464807-6">[</span><span class="p" data-group-id="1353464807-6">]</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="list_locations/0">
+    <div class="detail-header">
+    <a href="#list_locations/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">list_locations()</span>
+          </div>
+  <section class="docstring">
+<p>Returns the list of locations.</p>
+<h2 id="list_locations/0-examples" class="section-heading">
+  <a href="#list_locations/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">list_locations</span><span class="p" data-group-id="2065370111-1">(</span><span class="p" data-group-id="2065370111-1">)</span><span class="w">
+</span><span class="p" data-group-id="2065370111-2">[</span><span class="p" data-group-id="2065370111-3">%</span><span class="nc" data-group-id="2065370111-3">Location</span><span class="p" data-group-id="2065370111-3">{</span><span class="p" data-group-id="2065370111-3">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="2065370111-2">]</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="list_teams/0">
+    <div class="detail-header">
+    <a href="#list_teams/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">list_teams()</span>
+          </div>
+  <section class="docstring">
+<p>Returns the list of teams.</p>
+<h2 id="list_teams/0-examples" class="section-heading">
+  <a href="#list_teams/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">list_teams</span><span class="p" data-group-id="6013530400-1">(</span><span class="p" data-group-id="6013530400-1">)</span><span class="w">
+</span><span class="p" data-group-id="6013530400-2">[</span><span class="p" data-group-id="6013530400-3">%</span><span class="nc" data-group-id="6013530400-3">Team</span><span class="p" data-group-id="6013530400-3">{</span><span class="p" data-group-id="6013530400-3">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="6013530400-2">]</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="list_users_teams/0">
+    <div class="detail-header">
+    <a href="#list_users_teams/0" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">list_users_teams()</span>
+          </div>
+  <section class="docstring">
+<p>Returns the list of users_teams.</p>
+<h2 id="list_users_teams/0-examples" class="section-heading">
+  <a href="#list_users_teams/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">list_users_teams</span><span class="p" data-group-id="7992074429-1">(</span><span class="p" data-group-id="7992074429-1">)</span><span class="w">
+</span><span class="p" data-group-id="7992074429-2">[</span><span class="p" data-group-id="7992074429-3">%</span><span class="nc" data-group-id="7992074429-3">UserTeam</span><span class="p" data-group-id="7992074429-3">{</span><span class="p" data-group-id="7992074429-3">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="7992074429-2">]</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="login_or_register_from_github/1">
+    <div class="detail-header">
+    <a href="#login_or_register_from_github/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">login_or_register_from_github(user)</span>
+          </div>
+  <section class="docstring">
+<p>Github 登录应对。</p>
+  </section>
+</div>
+<div class="detail" id="mark_as_verified/1">
+    <div class="detail-header">
+    <a href="#mark_as_verified/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">mark_as_verified(user)</span>
+          </div>
+  <section class="docstring">
+<p>Mark the current user verified</p>
+  </section>
+</div>
+<div class="detail" id="register_user/1">
+    <div class="detail-header">
+    <a href="#register_user/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">register_user(attrs)</span>
+        
+      <div class="specs">
+          <pre>register_user(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) ::
+  {:ok, Mipha.Accounts.User.t()}
+  | {:error,
+     %Ecto.Changeset{
+       action: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       changes: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       constraints: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       data: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       empty_values: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       errors: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       filters: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       params: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       prepare: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       repo: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       repo_opts: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       required: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       types: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       valid?: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+       validations: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()
+     }}</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Register user.</p>
+<h2 id="register_user/1-example" class="section-heading">
+  <a href="#register_user/1-example" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Example
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">register_user</span><span class="p" data-group-id="3419638503-1">(</span><span class="p" data-group-id="3419638503-2">%{</span><span class="ss">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;user&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="ss">:&quot;user@minpha.com&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;123123123&quot;</span><span class="p" data-group-id="3419638503-2">}</span><span class="p" data-group-id="3419638503-1">)</span><span class="w">
+</span><span class="p" data-group-id="3419638503-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3419638503-4">%</span><span class="nc" data-group-id="3419638503-4">User</span><span class="p" data-group-id="3419638503-4">{</span><span class="p" data-group-id="3419638503-4">}</span><span class="p" data-group-id="3419638503-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">register_user</span><span class="p" data-group-id="3419638503-5">(</span><span class="p" data-group-id="3419638503-6">%{</span><span class="ss">username</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;user&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="ss">:&quot;user@minpha&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">password</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;123123123&quot;</span><span class="p" data-group-id="3419638503-6">}</span><span class="p" data-group-id="3419638503-5">)</span><span class="w">
+</span><span class="p" data-group-id="3419638503-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3419638503-8">%</span><span class="nc" data-group-id="3419638503-8">Ecto.Changeset</span><span class="p" data-group-id="3419638503-8">{</span><span class="p" data-group-id="3419638503-8">}</span><span class="p" data-group-id="3419638503-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="search_mention_user/2">
+    <div class="detail-header">
+    <a href="#search_mention_user/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">search_mention_user(user, q)</span>
+        
+      <div class="specs">
+          <pre>search_mention_user(Mipha.Accounts.User.t(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) :: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>添加 帖子与评论内容时，mention user.</p>
+  </section>
+</div>
+<div class="detail" id="update_company/2">
+    <div class="detail-header">
+    <a href="#update_company/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">update_company(company, attrs)</span>
+          </div>
+  <section class="docstring">
+<p>Updates a company.</p>
+<h2 id="update_company/2-examples" class="section-heading">
+  <a href="#update_company/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_company</span><span class="p" data-group-id="2942092637-1">(</span><span class="n">company</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2942092637-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">new_value</span><span class="p" data-group-id="2942092637-2">}</span><span class="p" data-group-id="2942092637-1">)</span><span class="w">
+</span><span class="p" data-group-id="2942092637-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2942092637-4">%</span><span class="nc" data-group-id="2942092637-4">Company</span><span class="p" data-group-id="2942092637-4">{</span><span class="p" data-group-id="2942092637-4">}</span><span class="p" data-group-id="2942092637-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">update_company</span><span class="p" data-group-id="2942092637-5">(</span><span class="n">company</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2942092637-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="2942092637-6">}</span><span class="p" data-group-id="2942092637-5">)</span><span class="w">
+</span><span class="p" data-group-id="2942092637-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2942092637-8">%</span><span class="nc" data-group-id="2942092637-8">Ecto.Changeset</span><span class="p" data-group-id="2942092637-8">{</span><span class="p" data-group-id="2942092637-8">}</span><span class="p" data-group-id="2942092637-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="update_location/2">
+    <div class="detail-header">
+    <a href="#update_location/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">update_location(location, attrs)</span>
+          </div>
+  <section class="docstring">
+<p>Updates a location.</p>
+<h2 id="update_location/2-examples" class="section-heading">
+  <a href="#update_location/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_location</span><span class="p" data-group-id="2269472268-1">(</span><span class="n">location</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2269472268-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">new_value</span><span class="p" data-group-id="2269472268-2">}</span><span class="p" data-group-id="2269472268-1">)</span><span class="w">
+</span><span class="p" data-group-id="2269472268-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2269472268-4">%</span><span class="nc" data-group-id="2269472268-4">Location</span><span class="p" data-group-id="2269472268-4">{</span><span class="p" data-group-id="2269472268-4">}</span><span class="p" data-group-id="2269472268-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">update_location</span><span class="p" data-group-id="2269472268-5">(</span><span class="n">location</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2269472268-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="2269472268-6">}</span><span class="p" data-group-id="2269472268-5">)</span><span class="w">
+</span><span class="p" data-group-id="2269472268-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="2269472268-8">%</span><span class="nc" data-group-id="2269472268-8">Ecto.Changeset</span><span class="p" data-group-id="2269472268-8">{</span><span class="p" data-group-id="2269472268-8">}</span><span class="p" data-group-id="2269472268-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="update_reset_password/2">
+    <div class="detail-header">
+    <a href="#update_reset_password/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">update_reset_password(user, attrs)</span>
+          </div>
+  <section class="docstring">
+<p>找回密码-重置密码</p>
+  </section>
+</div>
+<div class="detail" id="update_team/2">
+    <div class="detail-header">
+    <a href="#update_team/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">update_team(team, attrs)</span>
+          </div>
+  <section class="docstring">
+<p>Updates a team.</p>
+<h2 id="update_team/2-examples" class="section-heading">
+  <a href="#update_team/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_team</span><span class="p" data-group-id="6643432624-1">(</span><span class="n">team</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="6643432624-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">new_value</span><span class="p" data-group-id="6643432624-2">}</span><span class="p" data-group-id="6643432624-1">)</span><span class="w">
+</span><span class="p" data-group-id="6643432624-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="6643432624-4">%</span><span class="nc" data-group-id="6643432624-4">Team</span><span class="p" data-group-id="6643432624-4">{</span><span class="p" data-group-id="6643432624-4">}</span><span class="p" data-group-id="6643432624-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">update_team</span><span class="p" data-group-id="6643432624-5">(</span><span class="n">team</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="6643432624-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="6643432624-6">}</span><span class="p" data-group-id="6643432624-5">)</span><span class="w">
+</span><span class="p" data-group-id="6643432624-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="6643432624-8">%</span><span class="nc" data-group-id="6643432624-8">Ecto.Changeset</span><span class="p" data-group-id="6643432624-8">{</span><span class="p" data-group-id="6643432624-8">}</span><span class="p" data-group-id="6643432624-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="update_user/2">
+    <div class="detail-header">
+    <a href="#update_user/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">update_user(user, attrs)</span>
+          </div>
+  <section class="docstring">
+<p>Updates a user.</p>
+<h2 id="update_user/2-examples" class="section-heading">
+  <a href="#update_user/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_user</span><span class="p" data-group-id="5885864802-1">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5885864802-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">new_value</span><span class="p" data-group-id="5885864802-2">}</span><span class="p" data-group-id="5885864802-1">)</span><span class="w">
+</span><span class="p" data-group-id="5885864802-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5885864802-4">%</span><span class="nc" data-group-id="5885864802-4">User</span><span class="p" data-group-id="5885864802-4">{</span><span class="p" data-group-id="5885864802-4">}</span><span class="p" data-group-id="5885864802-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">update_user</span><span class="p" data-group-id="5885864802-5">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5885864802-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="5885864802-6">}</span><span class="p" data-group-id="5885864802-5">)</span><span class="w">
+</span><span class="p" data-group-id="5885864802-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5885864802-8">%</span><span class="nc" data-group-id="5885864802-8">Ecto.Changeset</span><span class="p" data-group-id="5885864802-8">{</span><span class="p" data-group-id="5885864802-8">}</span><span class="p" data-group-id="5885864802-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="update_user_password/2">
+    <div class="detail-header">
+    <a href="#update_user_password/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">update_user_password(user, attrs)</span>
+        
+      <div class="specs">
+          <pre>update_user_password(Mipha.Accounts.User.t(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) ::
+  {:ok, Mipha.Accounts.User.t()} | {:error, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>()}</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Updates user password.</p>
+  </section>
+</div>
+<div class="detail" id="update_user_team/2">
+    <div class="detail-header">
+    <a href="#update_user_team/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">update_user_team(user_team, attrs)</span>
+          </div>
+  <section class="docstring">
+<p>Updates a user_team.</p>
+<h2 id="update_user_team/2-examples" class="section-heading">
+  <a href="#update_user_team/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">update_user_team</span><span class="p" data-group-id="4548696918-1">(</span><span class="n">user_team</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4548696918-2">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">new_value</span><span class="p" data-group-id="4548696918-2">}</span><span class="p" data-group-id="4548696918-1">)</span><span class="w">
+</span><span class="p" data-group-id="4548696918-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4548696918-4">%</span><span class="nc" data-group-id="4548696918-4">UserTeam</span><span class="p" data-group-id="4548696918-4">{</span><span class="p" data-group-id="4548696918-4">}</span><span class="p" data-group-id="4548696918-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="n">update_user_team</span><span class="p" data-group-id="4548696918-5">(</span><span class="n">user_team</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4548696918-6">%{</span><span class="ss">field</span><span class="p">:</span><span class="w"> </span><span class="n">bad_value</span><span class="p" data-group-id="4548696918-6">}</span><span class="p" data-group-id="4548696918-5">)</span><span class="w">
+</span><span class="p" data-group-id="4548696918-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4548696918-8">%</span><span class="nc" data-group-id="4548696918-8">Ecto.Changeset</span><span class="p" data-group-id="4548696918-8">{</span><span class="p" data-group-id="4548696918-8">}</span><span class="p" data-group-id="4548696918-7">}</span></code></pre>
+  </section>
+</div>
+<div class="detail" id="user_login_changeset/1">
+  
+    <span id="user_login_changeset/0"></span>
+  <div class="detail-header">
+    <a href="#user_login_changeset/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">user_login_changeset(attrs \\ %{})</span>
+        
+      <div class="specs">
+          <pre>user_login_changeset(<a href="https://hexdocs.pm/elixir/Map.html#t:t/0">Map.t</a>()) :: <a href="https://hexdocs.pm/ecto/2.2.10/Ecto.Changeset.html#t:t/0">Ecto.Changeset.t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Returns the user login changeset.</p>
+  </section>
+</div>
+<div class="detail" id="user_register_changeset/1">
+  
+    <span id="user_register_changeset/0"></span>
+  <div class="detail-header">
+    <a href="#user_register_changeset/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">user_register_changeset(attrs \\ %{})</span>
+        
+      <div class="specs">
+          <pre>user_register_changeset(<a href="https://hexdocs.pm/elixir/Map.html#t:t/0">Map.t</a>()) :: <a href="https://hexdocs.pm/ecto/2.2.10/Ecto.Changeset.html#t:t/0">Ecto.Changeset.t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Returns the user register changeset.</p>
+  </section>
+</div>
+<div class="detail" id="user_update_password_changeset/1">
+  
+    <span id="user_update_password_changeset/0"></span>
+  <div class="detail-header">
+    <a href="#user_update_password_changeset/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <span class="signature">user_update_password_changeset(attrs \\ %{})</span>
+        
+      <div class="specs">
+          <pre>user_update_password_changeset(<a href="https://hexdocs.pm/elixir/Map.html#t:t/0">Map.t</a>()) :: <a href="https://hexdocs.pm/ecto/2.2.10/Ecto.Changeset.html#t:t/0">Ecto.Changeset.t</a>()</pre>
+      </div>
+  </div>
+  <section class="docstring">
+<p>Returns the user update_password changeset</p>
+  </section>
+</div>
+        </section>
+
+          <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.19.0),
+          </span>
+          <span class="line">
+            designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            </span>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+  <script src="dist/app-a0c90688fa.js"></script>
+  
+  </body>
+</html>
+
