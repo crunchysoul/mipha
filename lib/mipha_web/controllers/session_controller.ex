@@ -8,25 +8,25 @@ defmodule MiphaWeb.SessionController do
 
   def new(conn, _params) do
     changeset = Accounts.user_register_changeset()
-    render conn, :new, changeset: changeset
+    render(conn, :new, changeset: changeset)
   end
 
-  def rucaptcha(conn, _) do
-    {:ok, text, img_binary} = Captcha.get()
+  def excaptcha(conn, _) do
+    {:ok, text, img_binary} = Captcha.get(50_000)
 
     conn
-    |> put_session(:rucaptcha, text)
+    |> put_session(:excaptcha, text)
     |> put_resp_header("Cache-Control", "no-cache, no-store, max-age=0, must-revalidate")
     |> put_resp_header("Pragma", "no-cache")
     |> put_resp_content_type("image/gif")
     |> send_resp(200, img_binary)
   end
 
-  def create(conn, %{"user" => user_params, "_rucaptcha" => captcha}) do
+  def create(conn, %{"user" => user_params, "_excaptcha" => captcha}) do
     # Validation captcha.
     is_true_captcha =
       conn
-      |> get_session(:rucaptcha)
+      |> get_session(:excaptcha)
       |> String.equivalent?(captcha)
 
     unless is_true_captcha do
@@ -40,6 +40,7 @@ defmodule MiphaWeb.SessionController do
     case Accounts.register_user(user_params) do
       {:ok, user} ->
         sent_welcome_email(user)
+
         conn
         |> ok_login(user)
 

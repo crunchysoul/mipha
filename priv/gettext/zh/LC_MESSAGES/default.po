@@ -151,7 +151,7 @@ msgstr "忘记密码？"
 #, elixir-format
 #: lib/mipha_web/templates/auth/login.html.eex:43
 msgid "Forgot your password?"
-msgstr "友情社区"
+msgstr "忘记密码？"
 
 #, elixir-format
 #: lib/mipha_web/templates/topic/_right.html.eex:14
@@ -200,7 +200,7 @@ msgstr "招聘"
 
 #, elixir-format
 #: lib/mipha_web/templates/topic/_topic.html.eex:24
-#: lib/mipha_web/templates/topic/show.html.eex:17
+#: lib/mipha_web/templates/topic/show.html.eex:18
 msgid "Last by"
 msgstr "最后由"
 
@@ -310,7 +310,7 @@ msgstr "预览"
 #, elixir-format
 #: lib/mipha_web/templates/setting/_sidebar.html.eex:6
 msgid "Profile"
-msgstr ""
+msgstr "基本信息"
 
 #, elixir-format
 #: lib/mipha_web/controllers/setting_controller.ex:43
@@ -364,17 +364,17 @@ msgid "Reply"
 msgstr "评论"
 
 #, elixir-format
-#: lib/mipha_web/controllers/reply_controller.ex:58
+#: lib/mipha_web/controllers/reply_controller.ex:61
 msgid "Reply deleted successfully."
 msgstr "已成功删除回帖"
 
 #, elixir-format
-#: lib/mipha_web/controllers/reply_controller.ex:48
+#: lib/mipha_web/controllers/reply_controller.ex:51
 msgid "Reply updated error."
 msgstr "修改回帖失败"
 
 #, elixir-format
-#: lib/mipha_web/controllers/reply_controller.ex:43
+#: lib/mipha_web/controllers/reply_controller.ex:46
 msgid "Reply updated successfully."
 msgstr "已成功修改回帖"
 
@@ -402,7 +402,7 @@ msgstr "保存"
 #, elixir-format
 #: lib/mipha_web/templates/setting/_sidebar.html.eex:30
 msgid "Setting"
-msgstr "基本信息"
+msgstr "账户设置"
 
 #, elixir-format
 #: lib/mipha_web/templates/auth/login.html.eex:5
@@ -421,7 +421,7 @@ msgstr "退出"
 #: lib/mipha_web/templates/layout/_header.html.eex:70
 #: lib/mipha_web/templates/session/new.html.eex:5
 #: lib/mipha_web/templates/session/new.html.eex:33
-msgid "Sign Up"
+msgid "Register"
 msgstr "注册"
 
 #, elixir-format
@@ -440,13 +440,13 @@ msgid "Source Code"
 msgstr "开源代码"
 
 #, elixir-format
-#: lib/mipha_web/controllers/reply_controller.ex:76
+#: lib/mipha_web/controllers/reply_controller.ex:79
 #: lib/mipha_web/controllers/topic_controller.ex:197
 msgid "Star failed"
 msgstr "点赞失败"
 
 #, elixir-format
-#: lib/mipha_web/controllers/reply_controller.ex:71
+#: lib/mipha_web/controllers/reply_controller.ex:74
 #: lib/mipha_web/controllers/topic_controller.ex:192
 msgid "Star successfully"
 msgstr "点赞成功"
@@ -527,7 +527,7 @@ msgstr "帖子更新成功"
 #, elixir-format
 #: lib/mipha_web/templates/topic/_right.html.eex:48
 msgid "Topics Count: %{topic_count}"
-msgstr ""
+msgstr "帖子数: %{topic_count}"
 
 #, elixir-format
 #: lib/mipha_web/templates/topic/_replies.html.eex:3
@@ -536,8 +536,8 @@ msgstr "总共"
 
 #, elixir-format
 #: lib/mipha_web/templates/topic/_right_sidebar.html.eex:37
-msgid "Total %{topic_count} repleis"
-msgstr ""
+msgid "Total %{topic_count} replies"
+msgstr "共 %{topic_count} 回复"
 
 #, elixir-format
 #: lib/mipha_web/templates/user/_left.html.eex:63
@@ -554,18 +554,18 @@ msgstr "取消收藏"
 #, elixir-format
 #: lib/mipha_web/controllers/topic_controller.ex:253
 msgid "Uncollection failed"
-msgstr ""
+msgstr "取消收藏操作失败"
 
 #, elixir-format
 #: lib/mipha_web/controllers/topic_controller.ex:248
 msgid "Uncollection successfully"
-msgstr ""
+msgstr "已取消收藏"
 
 #, elixir-format
 #: lib/mipha_web/templates/user/followers.html.eex:28
 #: lib/mipha_web/templates/user/index.html.eex:26
 msgid "Unfollow"
-msgstr ""
+msgstr "取消关注"
 
 #, elixir-format
 #: lib/mipha_web/controllers/user_controller.ex:116
@@ -577,7 +577,7 @@ msgstr "取消关注失败"
 msgid "Unfollow successfully."
 msgstr "已取消关注"
 
-#, elixir-format, fuzzy
+#, elixir-format
 #: lib/mipha_web/templates/topic/_operate_toolbar.html.eex:38
 msgid "Unmark featured"
 msgstr "取消精华帖"
@@ -589,20 +589,20 @@ msgid "Unpin"
 msgstr "取消置顶"
 
 #, elixir-format
-#: lib/mipha_web/controllers/reply_controller.ex:95
+#: lib/mipha_web/controllers/reply_controller.ex:98
 #: lib/mipha_web/controllers/topic_controller.ex:215
 msgid "Unstar failed"
 msgstr "取消赞失败"
 
 #, elixir-format
-#: lib/mipha_web/controllers/reply_controller.ex:90
+#: lib/mipha_web/controllers/reply_controller.ex:93
 #: lib/mipha_web/controllers/topic_controller.ex:211
 msgid "Unstar successfully"
 msgstr "取消赞"
 
 #, elixir-format
 #: lib/mipha_web/templates/setting/profile.html.eex:38
-#: lib/mipha_web/templates/setting/show.html.eex:40
+#: lib/mipha_web/templates/setting/show.html.eex:41
 msgid "Update"
 msgstr "更新"
 
@@ -612,7 +612,7 @@ msgid "Update Password"
 msgstr "修改密码"
 
 #, elixir-format
-#: lib/mipha_web/templates/setting/show.html.eex:24
+#: lib/mipha_web/templates/setting/show.html.eex:25
 msgid "Upload avatar"
 msgstr "上传头像"
 
@@ -646,7 +646,7 @@ msgstr ""
 #, elixir-format
 #: lib/mipha_web/templates/topic/_right.html.eex:47
 msgid "Users Count: %{user_count}"
-msgstr ""
+msgstr "用户数: %{user_count}"
 
 #, elixir-format
 #: lib/mipha_web/templates/setting/profile.html.eex:28
@@ -674,13 +674,13 @@ msgid "captcha error, pls input again."
 msgstr "验证码错误，请重新输入"
 
 #, elixir-format
-#: lib/mipha_web/templates/topic/show.html.eex:24
+#: lib/mipha_web/templates/topic/show.html.eex:25
 msgid "hits"
 msgstr ""
 
 #, elixir-format
 #: lib/mipha_web/templates/topic/_topic.html.eex:28
-#: lib/mipha_web/templates/topic/show.html.eex:19
+#: lib/mipha_web/templates/topic/show.html.eex:20
 msgid "replied at"
 msgstr ""
 
@@ -698,3 +698,8 @@ msgstr "已清空站内信"
 #: lib/mipha_web/controllers/notification_controller.ex:26
 msgid "Marked all notifications readed."
 msgstr "已全部标记为已读"
+
+#, elixir-format
+#: lib/mipha_web/templates/setting/show.html.eex:18
+msgid "Public Email"
+msgstr "公开邮箱"
